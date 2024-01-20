@@ -1,8 +1,14 @@
 public class Percolation {
+    private boolean[][] grid;
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n){
-
+        grid = new boolean[n][n];
+        for(int i = 0; i<n;i++){
+            for(int j = 0; j<n; j++){
+                grid[i][j]= false;
+            }
+        }
     }
 
     // opens the site (row, col) if it is not open already
@@ -21,5 +27,8 @@ public class Percolation {
     public boolean percolates(){return true;}
 
     // test client (optional)
-    public static void main(String[] args){}
+    public static void main(String[] args){
+
+    }
 }
+
